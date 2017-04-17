@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+	<style type="text/css">
+    .cellall {
+        height:32px;
+        width:32px;
+        font-size:26px;
+        text-align:center;
+        border: 1px solid gray;
+    }
+    .inrigth {
+    	border-right: 2px solid black; 
+    }
+    .inleft {
+    	border-left: 1px solid black; 
+    }
+    .intop {
+    	border-top: 2px solid black; 
+    }
+    .inbottom {
+    	border-bottom: 1px solid black; 
+    }
+    .outrigth {
+    	border-right: 4px solid black; 
+    }
+    .outleft {
+    	border-left: 4px solid black; 
+    }
+    .outtop {
+    	border-top: 4px solid black; 
+    }
+    .outbottom {
+    	border-bottom: 4px solid black; 
+    }
+</style>
+	<meta charset="UTF-8">
+		<title> 数独游戏 </title>
+	</meta>
+</head>
+
+<body>
+	<table align="center" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td>
+					<input class="cellall outtop outleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outtop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outtop inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop outtop inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outtop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outtop inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outtop inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outtop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outtop outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input class="cellall outleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input class="cellall inbottom outleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input class="cellall intop outleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input class="cellall outleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input class="cellall inbottom outleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inbottom outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input class="cellall intop outleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall intop outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input class="cellall outleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input class="cellall outleft outbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outbottom inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outbottom inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outbottom inrigth" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outbottom inleft" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outbottom" maxlength="1">
+					</input>
+				</td>
+				<td>
+					<input class="cellall outbottom outrigth" maxlength="1">
+					</input>
+				</td>
+
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+
+</html>
